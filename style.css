@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+  background-color: #f5f3ef;
+  font-size: 18px;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 6200;
+}
+
+body{
+    background:#053a34;
+    padding-top: 85px; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.cardapio-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #003b36; 
+  color: #fff;
+  padding: 60px 100px;
+  gap: 60px;
+}
+
+.prato-img {
+  width: 480px;
+  border-radius: 4px;
+  display: block;
+}
+
+.texto-cardapio {
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+h2 {
+  color: white;
+  font-weight: bold;
+  padding-top: 50px
+}
+
+.row:first-of-type {
+  justify-content: center;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(216, 210, 210, 0.15);
+}
+
+/* Estilos dos Cards de Combo */
+.card-price, span{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffb13e;
+  margin: 0;
+}
+
+.btn {
+  margin-top: auto;
+  background-color: #003b36;
+  color: #fff;
+  border: none;
+}
+
+.fixed-img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0 !important; /* Apenas cantos superiores */
+}
+
+/* Estilos da imagem poke */
+.img-poke {
+  width: 1100px;
+  height: 450px;
+  border-radius: 20px !important;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 6px 20px rgba(85, 84, 84, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.img-poke:hover {
+  transform: scale(1.02);
+}
+
+/* Estilos do Modal */
+.modal-body img {
+  max-height: 400px;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+/* Estilos do Carousel */
+
+.carousel-img, .fundo {
+  width: 100%;
+  height: 600px;     
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.carousel-caption-custom {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: left;
+  width: 100%;
+  z-index: 2;
+  max-width: 490px;
+}
+
+.carousel2-caption-custom {
+  position: absolute;
+  top: 35%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 100%;
+  z-index: 2;
+  max-width: 500px;
+}
+
+.ifood-h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.ifood-p {
+  font-size: 1.8em;
+
+}
+
+.cardapio-h1 {
+  font-size: 2.9em;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #f5f3ef !important; 
+  color: #000 !important; 
+  border-top: 1px solid #f1e3e3; 
+}
+
+.btn-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #e10600; /* vermelho principal */
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-location:hover {
+  background-color: #b50500;
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-location i {
+  font-size: 18px;
+}
+
+.titulo-secao {
+  color: #e10600;
+  letter-spacing: 2px;
+}
+
+.subtitulo {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.divisor {
+  width: 2px;
+  background-color: #e10600;
+  height: 130px;
+}
+
+.btn-reserva {
+  background-color: #e10600;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-reserva:hover {
+  background-color: #b50500;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .divisor {
+    display: none;
+  }
+
+  .text-md-end,
+  .text-md-start {
+    text-align: center !important;
+  }
+}

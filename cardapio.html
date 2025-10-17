@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SushiKat</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background: black">
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <img src="img/logo.png" alt="logo" width="80" class="me-2">
+        <img src="img/name.png" alt="nome" height="40">
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="cardapio.html">Cardápio</a></li>
+          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="Sobre.html">Quem somos</a></li>
+          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="cadastro.html">Cadastre-se</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="cardapio-section">
+      <div class="imagem-container">
+        <img src="img/cardapio.png" alt="Prato japonês" class="prato-img">
+      </div>
+      <div class="texto-cardapio">
+        <p>
+          O cardápio do sushikat possui mais de 60 peças que variam entre os clássicos e pratos autorais da casa.
+          Os pratos únicos e contemporâneos são de criação do nosso Chef responsável, o Sensei André Kawai.
+          Lembrando que temos as únicas esteiras de sushi de Brasília no rodízio do sushikat Asa Sul e do sushikat
+          Sudoeste.
+          Além disso, quem preferir pode optar pelas delícias do menu à la carte, temos pratos individuais e combinados
+          especiais do sushikat.
+        </p>
+      </div>
+    </div>
+
+    <section class="container container-compacto" id="cardapio">
+      <h2 class="mb-5 text-center">Combos</h2>
+      <div class="row">
+        <div class="col-md-2 mb-2">
+          <div class="card h-100">
+            <img src="img/tradi12" class="card-img-top fixed-img" alt="Combo 12 Peças">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">12 Peças</h5>
+              <p class="card-price mb-2">R$ 49,90</p>
+              <button class="btn btn-danger mt-auto" data-bs-toggle="modal" data-bs-target="#modalCombo"
+                onclick="abrirModal('img/tradi12', '12 Peças', 'R$ 49,90', '4 niguiri salmão, 4 sashimi salmão, 4 uramaki tradicional')">
+                Sobre
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 mb-2">
+          <div class="card h-100">
+            <img src="img/tradi20" class="card-img-top fixed-img" alt="Combo 20 Peças">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">20 Peças</h5>
+              <p class="card-price mb-2">R$ 44,90</p>
+              <button class="btn btn-danger mt-auto" data-bs-toggle="modal" data-bs-target="#modalCombo"
+                onclick="abrirModal('img/tradi20', '20 Peças', 'R$ 44,90', '4 sashimi de salmão, 2 sashimi de atum, 2 sashimi de peixe branco, 2 niguiri de salmão, 2 niguiri de peixe branco, 2 niguiri de atum, 2 jo salmão, 4 uramaki filadélfia.')">
+                Sobre
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 mb-2">
+          <div class="card h-100">
+            <img src="img/tradi30.webp" class="card-img-top fixed-img" alt="Combo 30 Peças">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">30 Peças</h5>
+              <p class="card-price mb-2">R$ 129,90</p>
+              <button class="btn btn-danger mt-auto" data-bs-toggle="modal" data-bs-target="#modalCombo"
+                onclick="abrirModal('img/tradi30.webp', '30 Peças', 'R$ 129,90', '4 sashimi de salmão, 4 sashimi de atum, 4 sashimi de peixe branco, 4 jo salmão, 4 uramaki filadélfia, 4 makimono salmão, 2 niguiri de peixe branco, 2 niguiri de atum e 4 niguiri de salmão.')">
+                Sobre
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 mb-2">
+          <div class="card h-100">
+            <img src="img/tradi42" class="card-img-top fixed-img" alt="Combo 42 Peças">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">42 Peças</h5>
+              <p class="card-price mb-2">R$ 164,90</p>
+              <button class="btn btn-danger mt-auto" data-bs-toggle="modal" data-bs-target="#modalCombo"
+                onclick="abrirModal('img/tradi42', '42 Peças', 'R$ 164,90', '5 sashimi de salmão, 4 sashimi atum, 4 sashimi de peixe branco, 4 jo salmão, 2 uramaki tataki, 4 jo salmão queijo coalho e rapadura, 2 niguiri de atum, 2 niguiri de barriga de salmão, 2 niguiri de salmão, 4 salmão thai (recheado com camarão), 4 uramaki filadélfia e 5 carpaccio trufado de salmão.')">
+                Sobre
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mb-2">
+          <div class="card h-100">
+            <img src="img/combo.webp" class="card-img-top fixed-img" alt="Combo 12 Peças">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">SELEÇÃO NAGAZAKI</h5>
+              <p class="card-price mb-2">R$ 49,90</p>
+              <button class="btn btn-danger mt-auto" data-bs-toggle="modal" data-bs-target="#modalCombo"
+                onclick="abrirModal('img/combo.webp', 'SELEÇÃO NAGAZAKI', 'R$ 359,90', '1 shimeji, 1 ceviche, 10 peças de sashimi, 4 harumaki queijo brie, 2 cestinhas salmão e camarão, 4 ebi king (recheado com camarão), combinado 42 peças (4 sashimi de salmão, 4 sashimi atum, 4 jo salmão, 4 sashimi de peixe branco, 2 uramaki tataki, 4 jo salmão queijo coalho e rapadura, 2 niguiri de atum, 2 niguiri de barriga de salmão, 2 niguiri de salmão, 5 carpaccio trufado de salmão, 4 salmão thai (recheado com camarão) e 4 uramaki filadélfia), 4 hot banana com nutella e 3 cestinhas de brigadeiro de chocolate com morango.')">
+                Sobre
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <img src="img/fundoAlmo.webp" alt="" style="width: 100%; height: 50%; padding-top: 50px; border-radius: 30px;">
+          <div class="col-md-3 mb-3">
+            <div class="card h-100">
+              <img src="img/SHIMEJI.webp" class="card-img-top fixed-img" alt="A Silent Voice">
+              <div class="card-body">
+                <h5 class="card-title">SHIMEJI</h5>
+                <p class="card-text">Cogumelo na manteiga, shoyu, broto de feijão e cebolinha. (100g)</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card h-100">
+              <img src="img/combinado12" class="card-img-top fixed-img" alt="Spirited Away">
+              <div class="card-body">
+                <h5 class="card-title">COMBINADO 12 PEÇAS + CEVICHE</h5>
+                <p class="card-text">4 niguiri salmão, 4 sashimi salmão, 4 uramaki filadélfia e peixe branco.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-3 mb-3">
+            <div class="card h-100">
+              <img src="img/yakisoba.webp" class="card-img-top fixed-img" alt="Howl's Castle">
+              <div class="card-body">
+                <h5 class="card-title">YAKISOBA TRADICIONAL</h5>
+                <p class="card-text">Macarrão japonês, camarão, carne e frango com legumes.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card h-100">
+              <img src="img/doce.webp" class="card-img-top fixed-img" alt="Howl's Castle">
+              <div class="card-body">
+                <h5 class="card-title">HARUMAKI DE DOCE DE LEITE</h5>
+                <p class="card-text">2 rolinhos crocantes de doce de leite, açúcar, canela e sorvete de creme.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2 class="mb-3 text-center" style="padding-bottom: 30px;">Tradicionais</h2>
+          <div class="col-md-3 mb-3">
+            <div class="card h-100">
+              <img src="img/ceviche.webp" class="card-img-top fixed-img" alt="Kiki">
+              <div class="card-body">
+                <h5 class="card-title">CEVICHE</h5>
+                <p class="card-text"> peixe branco com molho cítrico.</p>
+                <span>R$ 32,90</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card h-100">
+              <img src="img/CARPACCIO.webp" class="card-img-top fixed-img" alt="Kiki">
+              <div class="card-body">
+                <h5 class="card-title">CARPACCIO TRUFADO</h5>
+                <p class="card-text">Salmão temperado ao molho ponzu e limão siciliano.</p>
+                 <span>R$ 42,90</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-3 mb-3">
+            <div class="card h-100">
+              <img src="img/maracuja.webp" class="card-img-top fixed-img" alt="Kiki">
+              <div class="card-body">
+                <h5 class="card-title">SALMÃO MARACUJÁ</h5>
+                <p class="card-text">Salmão recheadas com cream cheese e maracujá.</p>
+                  <span>R$ 32,90</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card h-100">
+              <img src="img/temaki.webp" class="card-img-top fixed-img" alt="Kiki">
+              <div class="card-body">
+                <h5 class="card-title">TEMAKI FILADÉLFIA</h5>
+                <p class="card-text">Salmão, cream cheese e cebolinha.</p>
+                <span>R$ 32,90</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-3 mb-3">
+            <div class="card h-100">
+              <img src="img/hot.webp" class="card-img-top fixed-img" alt="Kiki">
+              <div class="card-body">
+                <h5 class="card-title">URAMAKI FILADÉLFIA</h5>
+                <p class="card-text">Salmão e cream cheese.</p>
+                <span>R$ 32,90</span>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-3 mb-3">
+            <div class="card h-100">
+              <img src="img/peixebranco.png" class="card-img-top fixed-img" alt="Kiki">
+              <div class="card-body">
+                <h5 class="card-title">PEIXE BRANCO</h5>
+                <p class="card-text">niguiri de peixe branco.</p>
+                <span>R$ 12,90</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card h-100">
+              <img src="img/NEGURI.webp" class="card-img-top fixed-img" alt="Kiki">
+              <div class="card-body">
+                <h5 class="card-title">NIGUIRI CAMARÃO</h5>
+                <p class="card-text">Niguiri de camarão.</p>
+                   <span>R$ 12,90</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid mt-4 mb-5">
+          <div class="text-center">
+            <img src="img/poke.webp" alt="Poke Delicioso" class="img-poke">
+          </div>
+        </div>
+        
+    </section>
+
+  </main>
+
+  <!-- Modal para mostrar detalhes do combo -->
+  <div class="modal fade" id="modalCombo" tabindex="-1" aria-labelledby="modalComboLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalComboLabel">Detalhes do Combo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <img id="modalImagem" src="" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+              <h4 id="modalTitulo"></h4>
+              <h5 class="mb-3" style="color: #ffb13e;" id="modalPreco"></h5>
+              <p id="modalDescricao"></p>
+              <div class="mt-4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center p-3 mt-01">
+    <div>
+   <!-- <div class="d-flex align-items-center justify-content-center">
+        <img src="img/logo.png" alt="logo" width="45" class="me-2">
+        <img src="img/name.png" alt="nome" height="30">
+      </div> -->
+    </div>
+    <p>&copy; 2025 - SushiKat | Todos os direitos reservados - Desenvolvido por: Rafaela</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript para o modal -->
+  <script>
+    function abrirModal(imagem, titulo, preco, descricao) {
+      document.getElementById('modalImagem').src = imagem;
+      document.getElementById('modalTitulo').textContent = titulo;
+      document.getElementById('modalPreco').textContent = preco;
+      document.getElementById('modalDescricao').textContent = descricao;
+    }
+  </script>
+</body>
+
+</html>

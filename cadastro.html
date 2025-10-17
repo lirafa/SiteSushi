@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <img src="img/logo.png" alt=""> SushiKat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <img src="img/logo.png" alt="logo" width="80" class="me-2">
+                <img src="img/name.png" alt="nome" height="40">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="cardapio.html">Cardápio</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="Sobre.html">Quem somos</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="cadastro.html">Cadastre-se</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="container mt-5 pt-5">
+        <h1 class="text-center mb-4">Cadastre-se</h1>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </main>
+
+
+    <section class="funcionamento text-white py-5">
+      <div class="d-flex justify-content-center">
+        <img src="img/LogoSemFUndo.png" alt="nome" height="150">
+      </div>
+      <div class="container text-center">
+        <h5 class="titulo-secao text-uppercase fw-bold mb-4">Horário de Funcionamento</h5>
+
+        <div class="row justify-content-center align-items-start">
+          <!-- CASA -->
+          <div class="col-md-5 text-md-end text-center">
+            <h5 class="subtitulo text-uppercase fw-bold mb-3">Casa</h5>
+            <p class="m-0"><strong>Segunda a Quinta</strong> - 11h30 às 15h30 / 18h às 0h</p>
+            <p class="m-0"><strong>Sexta e Sábado</strong> - 11h30 às 01h</p>
+            <p><strong>Domingo</strong> - 11h30 às 22h30</p>
+          </div>
+
+          <div class="col-md-1 d-none d-md-flex justify-content-center">
+            <div class="divisor"></div>
+          </div>
+
+          <div class="col-md-5 text-md-start text-center">
+            <h5 class="subtitulo text-uppercase fw-bold mb-3">Delivery</h5>
+            <p class="m-0"><strong>Segunda a Quinta</strong> - 11h30 às 15h30 / 18h às 23h30</p>
+            <p class="m-0"><strong>Sexta e Sábado</strong> - 11h30 às 0h30</p>
+            <p><strong>Domingo</strong> - 11h30 às 22h30</p>
+          </div>
+        </div>
+
+        <div class="contatos mt-5">
+          <h5 class="subtitulo text-uppercase fw-bold " style="color: #e10600;">Contatos</h5>
+          <p class="mb-0">
+            <strong>Águas Claras:</strong> 61 99187-5990 |
+            <strong>Asa Sul:</strong> 61 99268-0735
+          </p>
+          <p>
+            <strong>Asa Norte:</strong> 61 98277-8033 |
+            <strong>Sudoeste:</strong> 61 99267-9180
+          </p>
+        </div>
+        <br> <br>
+        <a href="#" class="btn-reserva text-uppercase fw-bold mt-3">Faça sua reserva</a>
+      </div>
+    </section>
+
+    <footer class="text-center p-3 mt-01">
+      <p>&copy; 2025 - SushiKat | Todos os direitos reservados - Desenvolvido por: Rafaela</p>
+    </footer>
+</body>
+
+</html>
