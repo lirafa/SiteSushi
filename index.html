@@ -15,7 +15,7 @@
   <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
     <div class="container">
       <div class="d-flex align-items-center">
-        <img src="img/logo.png" alt="logo" width="70" class="me-2">
+        <img src="img/logo.png" alt="logo" width="80" class="me-2">
         <img src="img/name.png" alt="nome" height="40">
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -24,31 +24,34 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav align-items-center">
-          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="cardapio.html">Cardápio</a></li>
-          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="Sobre.html">Quem somos</a></li>
-          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="cadastro.html">Cadastre-se</a></li>
+        <ul class="navbar-nav navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link text-white fw-semibold active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-semibold" href="cardapio.html">Cardápio</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-semibold" href="Sobre.html">Quem somos</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-semibold" href="cadastro.html">Cadastre-se</a></li>
           <li class="nav-item">
-            <a class="btn btn-danger fw-semibold ms-6" href="#reservas">Reservas</a>
+            <a class="btnRest fw-semibold ms-5" href="#reservas">Reservas</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark fw-semibold" href="#">
-              <i class="bi bi-instagram fs-1"></i>
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white fw-semibold" href="https://www.instagram.com/lima.rlx/">
+              <i class="bi bi-instagram fs-2"></i>
             </a>
           </li>
-          
-          <li class="nav-item">
-            <a class="nav-link text-dark fw-semibold" href="#">
-              <i class="bi bi-whatsapp fs-1"></i>
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white fw-semibold" href="https://web.whatsapp.com/">
+              <i class="bi bi-whatsapp fs-2"></i>
             </a>
           </li>
-
-
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white fw-semibold" href="https://github.com/lirafa">
+              <i class="bi bi-github fs-2"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
+
 
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -58,14 +61,14 @@
           <h1 class="ifood-h1">TEM SUSHIKAT NO IFOOD!</h1>
           <p class="ifood-p">Já podemos te receber nas nossas unidades, mas continuamos com Delivery e Retirada todos os
             dias.</p>
-          <button class="btn btn-danger">PEÇA AQUI</button>
+          <a href="https://www.ifood.com.br" target="_blank" class="btn btn-danger">PEÇA AQUI</a>
         </div>
       </div>
       <div class="carousel-item position-relative">
         <img src="img/FundoSushi" class="d-block w-100 carousel-img" alt="...">
         <div class="carousel2-caption-custom">
           <h1 class="cardapio-h1">PRATOS TRADICIONAIS E CRIAÇÕES EXCLUSIVAS</h1>
-          <button class="btn btn-danger">Cardápio</button>
+          <a href="cardapio.html" class="btn btn-danger">Cardápio</a>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
@@ -80,136 +83,143 @@
       </button>
     </div>
 
-    <main class="container mt-5 pt-5">
+    <main class="container mt-5 pt-3">
+      <div class="section-sobre">
+        <!-- Topo: botões + imagem -->
+        <div class="top-grid">
+          <div class="buttons-wrapper">
+            <a href="https://www.ifood.com.br" target="_blank" class="btn btn-dark btn-lg">DELIVERY</a>
+            <a href="cardapio.html" class="btn btn-orange btn-lg">CARDÁPIO</a>
+          </div>
+          <div class="img-top">
+            <img src="img/imgbtn.avif" alt="imagem pratos" class="img-fluid">
+          </div>
+        </div>
+        <img src="img/letraJapan.avif" alt="">
+        <!-- Conteúdo "Sobre" -->
+        <div class="bottom-grid">
+          <div class="image-left">
+            <img src="img/catPreci.png" alt="">
+          </div>
 
-    <div>
-            <div class="d-flex align-items-center justify-content-between">
-                <div >
+          <div class="text-right">
+            <h1>SOBRE</h1>
+            <hr class="decor-line">
+            <p>O SushiKat Japanese Food começou como uma vontade de empreender. Como diz o velho clichê:
+              "quem faz o que ama não trabalha". Então, o SushiKat virou um trabalho que amamos demais,
+              nossa escolha diária de sermos os melhores em Brasília. Nós gostamos da inovação da cozinha contemporânea,
+              juntando o que tem de mais moderno na culinária Asiática e, principalmente, do Japão.
+            </p>
+            <a href="Sobre.html" class="btn btn-orange">SAIBA MAIS</a>
+          </div>
+        </div>
+      </div>
 
-                    <a href="">Delivery</a>
-                    <a href="">cardapio</a>
+      <section class="text-white text-center p-5" id="reservas">
+        <h4 class="text-white fw-bold mb-4">FAÇA JÁ A SUA RESERVA</h4>
 
-                </div>
-                <div>
-                    <img src="img/imgbtn.png" alt="">
-                </div>
-            </div>
-            <img src="img/letraJapan.avif">
-            <div class="d-flex align-items-center justify-content-between ">
-                <div>
-                    <img src="img/catPreci.png" alt="">
-                </div>
-                <div class="text-white">
-                    <h1>Sobre</h1>
-                    <p>O SushiKat Japanese Food, começou como uma vontade de empreender. Como diz aquele velho clichê: "quem
-                        faz o que ama não trabalha".
-                        Então, o SushiKat virou um trabalho que amamos demais, nossa escolha diária de sermos os melhores em
-                        Brasília. Nós gostamos da inovação da cozinha contemporânea, juntando o que tem de mais moderno na culinária Asiática e, principalmente, do Japão.
-                        
-                    </p>
-                    <a href="">Saiba mais</a>
+        <div class="d-flex justify-content-center align-items-center flex-wrap gap-3 mb-4">
+          <button href="https://web.whatsapp.com/" class="btn text-uppercase fw-bold btn-reserva-local">Asa Norte</button>
 
-                </div>
-            </div>
+          <div class="vr mx-2" style="height: 30px; width: 4px;"></div>
+          <button href="https://web.whatsapp.com/" class="btn text-uppercase fw-bold btn-reserva-local">Asa Sul</button>
 
+          <div class="vr mx-2" style="height: 30px; width: 4px;"></div>
+          <button href="https://web.whatsapp.com/" class="btn text-uppercase fw-bold btn-reserva-local">Sudoeste</button>
 
-
+          <div class="vr mx-2" style="height: 30px; width: 4px;"></div>
+          <button class="btn text-uppercase fw-bold btn-reserva-local" href="https://web.whatsapp.com/">Águas Claras</button>
         </div>
 
+        <button class="btn text-uppercase fw-bold mt-3 btn-whatsapp" href="https://web.whatsapp.com/">Reserve pelo WhatsApp</button>
+      </section>
 
-      <section class="text-white text-center" id="reservas">
-        <h1>Faça já a sua reserva</h1>
-        <div class="d-flex g-4">
-          <P>Águas Claras</P>
-          <p>Asa Sul</p>
-          <p>Asa Norte</p>
-          <p>Sudoeste</p>
-        </div>
-
-        <img src="" alt="">
-
-        <div class="row g-4">
-          <!-- Unidade 1 -->
-          <div class="col-md-6">
-            <div class="card bg-dark text-white border-light h-100">
-              <div class="row g-0">
-                <div class="col-4">
-                  <img src="img/restaurante1.png" class="img-fluid rounded-start" alt="Águas Claras">
-                </div>
-                <div class="col-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Águas Claras</h5>
-                    <p class="card-text">R. Manacá, 1 - Lojas 4 e 5 - Águas Claras, Brasília - DF</p>
-                    <a href="#" class="btn-location">
-                      <i class="bi bi-geo-alt-fill"></i> Localização
-                    </a>
-
-                  </div>
-                </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card text-white border-light h-100" style="background-color: #053a34;">
+            <div class="row g-0">
+              <div class="col-4">
+                <img src="img/restaurante1.png" class="img-fluid rounded-start" alt="Águas Claras">
               </div>
-            </div>
-          </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title">Águas Claras</h5>
+                  <p class="card-text">R. Manacá, 1 - Lojas 4 e 5 - Águas Claras, Brasília - DF</p>
+                  <br> <br>
+                  <a href="https://maps.google.com/?q=R.+Manacá,+1+-+Águas+Claras,+Brasília+-+DF" target="_blank"
+                    class="btn-location">
+                    <i class="bi bi-geo-alt-fill"></i> Localização
+                  </a>
 
-          <!-- Unidade 2 -->
-          <div class="col-md-6">
-            <div class="card bg-dark text-white border-light h-100">
-              <div class="row g-0">
-                <div class="col-4">
-                  <img src="img/AsaSul rest.png" class="img-fluid rounded-start" alt="Asa Sul">
-                </div>
-                <div class="col-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Asa Sul</h5>
-                    <p class="card-text">Asa Sul Comércio Local Sul 402 Bloco A Loja 9 - Brasília - DF</p>
-                    <a href="#" class="btn-location">
-                      <i class="bi bi-geo-alt-fill"></i> Localização
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Unidade 3 -->
-          <div class="col-md-6">
-            <div class="card bg-dark text-white border-light h-100">
-              <div class="row g-0">
-                <div class="col-4">
-                  <img src="img/AsaNorte.png" class="img-fluid rounded-start" alt="Asa Norte">
-                </div>
-                <div class="col-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Asa Norte</h5>
-                    <p class="card-text">SCLN 412, BLOCO D, Asa Norte Comércio Local Norte 412 - Brasília - DF</p>
-                    <a href="#" class="btn-location">
-                      <i class="bi bi-geo-alt-fill"></i> Localização
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Unidade 4 -->
-          <div class="col-md-6">
-            <div class="card bg-dark text-white border-light h-100">
-              <div class="row g-0">
-                <div class="col-4">
-                  <img src="img/sudoeste.png" class="img-fluid rounded-start" alt="Sudoeste">
-                </div>
-                <div class="col-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Sudoeste</h5>
-                    <p class="card-text">Sig Sul quadra 08 lote 2397, St. Sudoeste, Brasília - DF</p>
-                    <a href="#" class="btn-location">
-                      <i class="bi bi-geo-alt-fill"></i> Localização
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="col-md-6">
+          <div class="card text-white border-light h-100" style="background-color: #053a34;">
+            <div class="row g-0">
+              <div class="col-4">
+                <img src="img/AsaSulRest.png" class="img-fluid rounded-start" alt="Asa Sul">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title">Asa Sul</h5>
+                  <p class="card-text">Asa Sul Comércio Local Sul 402 Bloco A Loja 9 - Brasília - DF</p>
+                  <br> <br>
+                  <a href="https://maps.google.com/?q=CLS+402+Bloco+A+Loja+9+-+Asa+Sul,+Brasília+-+DF" target="_blank"
+                    class="btn-location">
+                    <i class="bi bi-geo-alt-fill"></i> Localização
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card text-white h-100" style="background-color: #053a34;">
+            <div class="row g-0">
+              <div class="col-4">
+                <img src="img/AsaNorte.png" class="img-fluid rounded-start" alt="Asa Norte">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title">Asa Norte</h5>
+                  <p class="card-text">SCLN 412, BLOCO D, Asa Norte Comércio Local Norte 412 - Brasília - DF</p>
+                  <br> <br>
+                  <a href="https://maps.google.com/?q=SCLN+412+Bloco+D+-+Asa+Norte,+Brasília+-+DF" target="_blank"
+                    class="btn-location">
+                    <i class="bi bi-geo-alt-fill"></i> Localização
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card text-white border-light h-100" style="background-color: #053a34;">
+            <div class="row g-0">
+              <div class="col-4">
+                <img src="img/sudoeste.png" class="img-fluid rounded-start" alt="Sudoeste">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title">Sudoeste</h5>
+                  <p class="card-text">Sig Sul quadra 08 lote 2397, St. Sudoeste, Brasília - DF</p>
+                  <br> <br>
+                  <a href="https://maps.google.com/?q=SIG+Sul+quadra+08+lote+2397+-+Sudoeste,+Brasília+-+DF"
+                    target="_blank" class="btn-location">
+                    <i class="bi bi-geo-alt-fill"></i> Localização
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </section>
 
     </main>
@@ -243,7 +253,7 @@
         </div>
 
         <div class="contatos mt-5">
-          <h5 class="subtitulo text-uppercase fw-bold " style="color: #e10600;">Contatos</h5>
+          <h5 class=" text-uppercase fw-bold " style="color: #b50500;">Contatos</h5>
           <p class="mb-0">
             <strong>Águas Claras:</strong> 61 99187-5990 |
             <strong>Asa Sul:</strong> 61 99268-0735
@@ -253,8 +263,8 @@
             <strong>Sudoeste:</strong> 61 99267-9180
           </p>
         </div>
-        <br> <br>
-        <a href="#" class="btn-reserva text-uppercase fw-bold mt-3">Faça sua reserva</a>
+        <br>
+        <a href="https://web.whatsapp.com/" class="btn  text-uppercase">Faça sua reserva</a>
       </div>
     </section>
 
